@@ -16,6 +16,7 @@ Si suponemos que tenemos 100 clientes que captas como muestra y se van 26. Y est
 
 Esto se explicara con mas detalle en el punto siguente con la tasa de retención(antiguedad)
 
+![Tasa de evasión](graficos/clientes_evasion.png)
 ---
 
 ### 2. **Antigüedad: los clientes nuevos (0–12 meses) se evaden más**
@@ -25,6 +26,8 @@ Se agruparon los clientes por rangos de antigüedad (en meses). El análisis mue
 - Aún no han construido una relación sólida con la empresa.
 - Pueden experimentar dificultades en la implementación o servicios defectuosos iniciales.
 - Tienen menor compromiso emocional o contractual.
+  
+![Tasa de evasión](graficos/clientes_evasion_ant_grupo.png)
 
 🔎 **Interpretación**: Los primeros meses son críticos. Si no se establece confianza y valor desde el principio, el riesgo de abandono es mucho mayor.
 
@@ -38,38 +41,61 @@ Si el cliente con estos datos se va entre en el limite superior de 12 meses te d
 
 ---
 
-### 3. **Tipo de contrato: mensual = mayor evasión**
+### 3. **Distribución: mayoría son clientes nuevos y los la mayor parte de los que se van**
 
-Al analizar el tipo de contrato (mensual, anual o bianual), se encontró que los clientes con **contratos mensuales presentan la mayor tasa de evasión**. En cambio, los contratos de mayor duración retienen más clientes.
+La mayoría de los clientes actuales tienen menos de 12 meses de antigüedad y son los que mayormente se van por lo que hay problemas de fidelización del cliente. Esto puede ser a factores, como el valor percibido, o la poca o nula asistencia que puede recibir el cliente, ya sea tecnica o comercial los primeros meses. Ademas, de otros factores que podremos analizar en los puntos siguentes. Por lo tanto, la empresa debe concentrar esfuerzos de retención en este grupo, ya que cualquier mejora tendrá un impacto directo sobre el total de clientes.
+
+![Tasa de evasión](graficos/clientes_evasion_ant_cantclientes.png)
+---
+
+### 4. **Contrato mensual = Mayor Tasa de Salida**
+
+Al analizar el tipo de contrato (mensual, anual o bianual), se encontró que los clientes con **contratos mensuales presentan la mayor tasa de evasión**. En cambio, los contratos de mayor duración retienen más clientes, ya que al ser un pago unico y por lo general a la larga sale mas barato, por ende podria darse enfasis a este servicio o mejorar las ofertas o insentivos para poder hacer mas atractiva este tipo de contrato o el bi anual tambien.
 
 📌 **Explicación**:
 - Los contratos mensuales permiten salir fácilmente, lo que reduce el compromiso.
 - En cambio, los contratos anuales o bianuales implican planificación y generalmente ofrecen mejores precios.
 
----
 
-### 4. **Cargo mensual: alto valor asociado a mayor evasión**
+Por otro lado embargo, otros factores asociados con la tasa de salida son :
 
-Se identificó que los clientes que pagan más al mes son más propensos a evadirse. Sin embargo, este grupo también suele tener servicios como **fibra óptica**, lo que sugiere que son clientes premium.
+ #Tipo de internet#
+ 
+- Existe una correlación en el mapa de calor entre el tipo de servicio de internet contratado y la mayor cantidad de personas que se van de telecomX (42 %)  esto puede ser debido a problemas especificos con el tipo internet contratado, o el sector en especifico. Ya que este suele ser el mas claro o el que tiene mayor calidad.
+  
+![Tasa de evasión](graficos/![Tasa de evasión](graficos/clientes_evasion_ant_calor.png)
+
+#Edad#
+
+-La tasa de adulto mayor que deja el servicio es de 42% tambien. Esto se correlaciona al abandono de planes a los pocos meses, ya que por lo general la gente adulta mayor no se maneja mucho con estos servicios y los medios de ayuda al cliente. Por lo que se da a entender que no existe un soporte adecuado, para los problemas recurrentes a los primeros meses de contratación
+
+
+#Metodo de pago#
+
+En los metodos de pago, el que destaca por una alta salida de clientes es el metodo de electronic check (pago electronico) que no es automatico. Da a entender que el servicio no es muy valorado por los clientes, ya que la no existir un valor percibido o una fidelización fuerte del producto. No dan ganas de hacer el pago manual mediante plataformas de pago electronicas y el cliente, que lo mas seguro tiene contratado un servicio mensual. Se va y deja de pagar.
+
+![Tasa de evasión](graficos/clientes_evasion_tipos.png)
+
+#Cantidad de dinero gastado#
+
+-En promedio la cantidad de dinero gastado y que se fue no supera a la gente que se quedo. Si se puede ver que ciertos clientes que no son la media, se fueron y gastaron bastante. Por lo que se condice que existe problemas con el servicio al cliente o nulo soporte los primeros meses de contrataciòn. A estos clientes debe darse un trato preferente o mejores servicios asociados a su nivel de plan o dinero invertido en esta ISP.
+
+![Tasa de evasión](graficos/clientes_evasion_gasto.png)
 
 ⚠️ **Riesgo**:
-- Si un cliente paga más pero no percibe una mejora clara en el servicio, es más probable que se frustre y se vaya.
-- Perder clientes premium implica perder más valor por cliente.
-
----
-
-### 5. **Distribución: mayoría son clientes nuevos**
-
-La mayoría de los clientes actuales tienen menos de 12 meses de antigüedad. Por lo tanto, la empresa debe concentrar esfuerzos de retención en este grupo, ya que cualquier mejora tendrá un impacto directo sobre el total de clientes.
+- Si un cliente paga más pero no percibe una mejora clara en el servicio o a la altura del pago que se realiza, es más probable que se frustre y se vaya. Como en los casos expuestos anteriormente
+- Perder clientes premium implica perder aun más valor por cliente.(CAC)
 
 ---
 
 ## 📈 Visualizaciones Relevantes
 
 Se incluyeron:
-- **Tasa de evasión por grupo de antigüedad** (gráfico de línea).
-- **Cantidad de clientes por grupo + tasa de evasión** (doble eje con línea y barra).
+- **Tasa de evasión por grupo de antigüedad**.
+- **Cantidad de clientes por grupo + tasa de evasión** 
 - Comparaciones por tipo de contrato, cargo mensual y servicios.
+- Relación entre evasión y total gastado
+  
 
 Estos gráficos permitieron evidenciar las relaciones antes descritas.
 
